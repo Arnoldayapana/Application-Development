@@ -24,8 +24,8 @@ export default function App() {
 
       <Stack.Screen 
           name="Encrypt"
-          component={EncryptScreen}
-          options={{ headerShown: false }}/>
+          component={EncryptScreen}/>
+
 
       <Stack.Screen 
           name="Decrypt"

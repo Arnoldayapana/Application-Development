@@ -8,8 +8,7 @@ function HomeScreen() {
     return (
         <>
         <View style={styles.container}>
-            <Image source={require('../assets/encrypt.png')} style={styles.Images}/>
-
+            <Image source={require('')} style={styles.Images}/>
             <Text style={styles.text}> Choose To start! </Text>
             <>
             <HButton

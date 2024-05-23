@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TextInput as RNTextInput,Keyboard,TouchableWithoutFeedback } from 'react-native';
 import EncryptButton from '../share/encryptButtton';
+import DeleteButton from '../share/Delete';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function DecryptScreen() {
@@ -50,12 +51,10 @@ export default function DecryptScreen() {
                      style={styles.decryptButton}
                      textStyle={styles.decryptButtonText}
                 />
-                <EncryptButton
+                <DeleteButton
                     text="Delete"
                     onPress={handleDelete}
                     accessibilityLabel="Delete button"
-                    style={styles.deleteButton}
-                    textStyle={styles.deleteButtonText}
                 />
             </View>
         </View>
@@ -96,13 +95,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: '95%',
-    },
-    deleteButton: {
-        backgroundColor: '#fff',
-        marginLeft: 10,
-    },
-    deleteButtonText: {
-        color: '#fff',
     },
     icon: {
         marginRight: 5,

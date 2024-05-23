@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, View, Text, TextInput as RNTextInput,Keyboard,TouchableWithoutFeedback } from 'react-native';
 import EncryptButton from '../share/encryptButtton';
+import DeleteButton from '../share/Delete';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function EncryptScreen() {
@@ -52,7 +53,8 @@ export default function EncryptScreen() {
                      onPress={handleEncrypt}
                      accessibilityLabel="Encrypt button"
                 />
-                <EncryptButton
+                
+                <DeleteButton
                     text="Delete"
                     onPress={handleDelete}
                     accessibilityLabel="Delete button"
@@ -97,13 +99,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         width: '95%',
-    },
-    deleteButton: {
-        backgroundColor: '#fff',
-        marginLeft: 10,
-    },
-    deleteButtonText: {
-        color: '#fff',
     },
     icon: {
         marginRight: 5,
