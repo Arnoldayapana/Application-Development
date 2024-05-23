@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { View, Text, StyleSheet,Image} from 'react-native';
+import { View, Text, StyleSheet, Image} from 'react-native';
 import HButton from '../share/HomeButton';
 
 function HomeScreen() {
@@ -8,7 +8,7 @@ function HomeScreen() {
     return (
         <>
         <View style={styles.container}>
-            <Image source={require('')} style={styles.Images}/>
+            <Image source={require('../assets/encrypt.png')} style={styles.Images}/>
             <Text style={styles.text}> Choose To start! </Text>
             <>
             <HButton
