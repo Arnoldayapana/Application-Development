@@ -8,8 +8,10 @@ export default function DecryptScreen() {
     const [encryptedMessage, setEncryptedMessage] = useState('');
     const shift = 3; // Same shift value used in the encryption
 
+    const caesarCipherDecrypt = "Miss you 😘";
+
     // Caesar cipher decryption function
-    const caesarCipherDecrypt = (text, shift) => {
+   /* const caesarCipherDecrypt = (text, shift) => {
         const alphabet =  'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*+=?></~>';
         const shiftedAlphabet = alphabet.slice(-shift) + alphabet.slice(0, -shift);
         return text.split('').map(char => {
@@ -21,6 +23,10 @@ export default function DecryptScreen() {
     const handleDecrypt = () => {
         const decryptedMessage = caesarCipherDecrypt(encryptedMessage, shift);
         setEncryptedMessage(decryptedMessage);
+    };*/
+
+    const handleDecrypt = () => {
+        setEncryptedMessage(caesarCipherDecrypt);
     };
 
     const handleDelete = () => {
