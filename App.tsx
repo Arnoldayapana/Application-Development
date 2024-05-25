@@ -24,12 +24,14 @@ export default function App() {
 
       <Stack.Screen 
           name="Encrypt"
-          component={EncryptScreen}/>
+          component={EncryptScreen}
+          options={{ headerShown: false }}/>
 
 
       <Stack.Screen 
           name="Decrypt"
-          component={DecryptScreen} />
+          component={DecryptScreen}
+          options={{ headerShown: false }}/>
       </Stack.Navigator>
 
     </NavigationContainer>
