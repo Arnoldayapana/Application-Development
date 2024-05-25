@@ -8,7 +8,7 @@ export default function WelcomeScreen({ navigation: { navigate } }) {
             <ImageBackground source={require('../assets/background.jpg')} resizeMode="cover" style={styles.image}>
                 <View style={styles.textContainer}>
                     <Text style={styles.text}>Meet the</Text>
-                    <Text style={styles.text1}>Cyper App!</Text>
+                    <Text style={styles.text1}>Ciper App!</Text>
                 </View>
             </ImageBackground>
             <View style={styles.buttons}>
